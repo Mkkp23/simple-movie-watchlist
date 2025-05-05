@@ -4,13 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import AddMovie from './pages/AddMovie';
 import ListMovie from './pages/ListMovie';
 import Home from './pages/Home';
-import Navbar from './Contexts/Navbar';
+import Navbar from './components/Navbar';
 
 function App() {
 
   const pages = [
-    { name: "New Movie", path:"/movie/add" },
-    { name: "All Movies", path:"/movie/list" },
+    { name: "New Movie", path: "/movie/add" },
+    { name: "All Movies", path: "/movie/list" },
   ]
 
   return (

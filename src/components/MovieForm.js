@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { useMovies } from "../Contexts/MoviesContext";
+import { useMovies } from "../contexts/MoviesContext";
 
 const MovieForm = () => {
 

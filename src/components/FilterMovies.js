@@ -2,7 +2,7 @@
 const FilterMovies = ({ filters, active, activator }) => {
 
     return (
-        <ul className="flex flex-row justify-evenly items-center">
+        <ul className="flex flex-row justify-evenly items-center border-b border-accent-1/30 pb-1">
             {
                 filters.map(
                     (filter, index) => {
