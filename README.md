@@ -2,7 +2,6 @@
 
 A modern, responsive React application for managing your movie collection. Track movies you've watched and plan to watch with a beautiful, intuitive interface.
 
-![Movie Watchlist Screenshot](screenshot.png)
 
 ## ✨ Features
 
