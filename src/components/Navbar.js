@@ -11,7 +11,9 @@ const Navbar = ({ pages }) => {
             <div className="hidden md:flex justify-between items-center">
                 <div className="text-accent-1 font-bold text-xl px-4 select-none">
                     <Link to="/" className="flex items-center hover:text-accent-1/80 transition-colors duration-200">
-                        <span className="text-2xl mr-2">🎬</span>
+                        <span className="text-2xl mr-2"><svg className="w-8 h-8 text-accent-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                            </svg></span>
                         <span className="bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-text text-transparent">
                             MovieWatchList
                         </span>
@@ -23,20 +25,17 @@ const Navbar = ({ pages }) => {
                         const isActive = location.pathname === page.path;
 
                         return (
-                            <li key={index} className="relative">
+                            <li key={index}>
                                 <Link
-                                    className={`px-4 py-2 rounded-md transition-all duration-200 font-medium
+                                    className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium
                                     ${isActive
-                                            ? 'bg-accent-1/20 text-accent-1'
+                                            ? 'bg-accent-1 text-white shadow-lg shadow-accent-1/20'
                                             : 'text-primary-text hover:bg-accent-1/10 hover:text-accent-1'
                                         }`}
                                     to={page.path}
                                 >
                                     {page.name}
                                 </Link>
-                                {isActive && (
-                                    <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-accent-1 rounded-full" />
-                                )}
                             </li>
                         );
                     })}
@@ -48,7 +47,9 @@ const Navbar = ({ pages }) => {
                 <div className="flex justify-between items-center">
                     <div className="text-accent-1 font-bold text-xl select-none">
                         <Link to="/" className="flex items-center">
-                            <span className="text-2xl mr-1">🎬</span>
+                            <span className="text-2xl mr-1"><svg className="w-8 h-8 text-accent-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                            </svg></span>
                             <span className="bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-text text-transparent">
                                 Movies
                             </span>
@@ -76,9 +77,9 @@ const Navbar = ({ pages }) => {
                             return (
                                 <li key={index}>
                                     <Link
-                                        className={`block px-4 py-3 rounded-md transition-all duration-200 font-medium
+                                        className={`block px-4 py-3 rounded-lg transition-all duration-200 font-medium
                                         ${isActive
-                                                ? 'bg-accent-1/10 text-accent-1 border-l-2 border-accent-1'
+                                                ? 'bg-accent-1 text-white shadow-lg shadow-accent-1/20'
                                                 : 'text-primary-text hover:bg-accent-1/5 hover:text-accent-1'
                                             }`}
                                         to={page.path}
