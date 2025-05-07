@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useMovies } from "../Contexts/MoviesContext";
+import { useMovies } from "../contexts/MoviesContext";
 import FilterMovies from "../components/FilterMovies";
 import ShowMovies from "../components/ShowMovies";
 
@@ -25,7 +25,7 @@ const ListMovies = () => {
                             </span>
                         </h1>
                     </div>
-                    <Link 
+                    <Link
                         to="/movie/add"
                         className="mt-4 md:mt-0 inline-flex items-center px-6 py-3 bg-accent-1 text-white font-semibold rounded-lg shadow-lg hover:bg-accent-1/90 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
                     >

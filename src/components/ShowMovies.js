@@ -1,4 +1,4 @@
-import { useMovies } from "../Contexts/MoviesContext";
+import { useMovies } from "../contexts/MoviesContext";
 import Movie from "./Movie";
 
 const ShowMovies = ({ active }) => {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useMovies } from '../Contexts/MoviesContext';
+import { useMovies } from '../contexts/MoviesContext';
 
 const Home = () => {
     const { movies } = useMovies();

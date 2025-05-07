@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useMovies } from "../Contexts/MoviesContext";
+import { useMovies } from "../contexts/MoviesContext";
 import { useNavigate } from "react-router-dom";
 
 const MovieForm = () => {
